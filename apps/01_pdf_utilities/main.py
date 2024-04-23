@@ -39,11 +39,13 @@ def proteger_pdf(input_path, output_path, password):
 
 # Página para unir PDFs
 def pagina_unir_pdfs():
-    st.image("assets/pdf.png", width=200)
+    left_co, cent_co,last_co = st.columns(3)
+    with cent_co:
+        st.image("assets/merge.png", width=200)
     st.header("Unir varios PDF's.")
     st.subheader("Adjuntar los pdfs a unir.")
 
-    pdf_adjuntos = st.file_uploader(label="pdf-merge", accept_multiple_files=True)
+    pdf_adjuntos = st.file_uploader(label="Unir PDFs", accept_multiple_files=True)
 
     unir = st.button(label="Unir PDF's")
 
@@ -59,11 +61,13 @@ def pagina_unir_pdfs():
 
 # Página para dividir PDFs
 def pagina_dividir_pdfs():
-    st.image("assets/pdf.png", width=200)
+    left_co, cent_co,last_co = st.columns(3)
+    with cent_co:
+        st.image("assets/split.png", width=200)
     st.header("Dividir archivos PDF")
     st.subheader("Abrir PDF a dividir")
 
-    pdf_div = st.file_uploader(label="pdf-divider", accept_multiple_files=False)
+    pdf_div = st.file_uploader(label="Dividir PDF", accept_multiple_files=False)
 
     if pdf_div is not None:
         pdf_reader = PyPDF2.PdfReader(pdf_div)
@@ -98,11 +102,13 @@ def pagina_dividir_pdfs():
 
 # Página para proteger PDFs con contraseña
 def pagina_proteger_pdf():
-    st.image("assets/pdf.png", width=200)
+    left_co, cent_co,last_co = st.columns(3)
+    with cent_co:
+        st.image("assets/secure.png", width=200)
     st.header("Proteger archivo PDF")
     st.subheader("Selecciona un PDF para proteger con contraseña")
 
-    pdf_prot = st.file_uploader(label="pdf-protect")
+    pdf_prot = st.file_uploader(label="Proteger PDF")
 
     if pdf_prot is not None:
         password = st.text_input(label="Introduce la contraseña", type="password")
@@ -121,13 +127,12 @@ def pagina_proteger_pdf():
             st.error("Las contraseñas no coinciden")
 
 # Configuración de la barra lateral
-st.sidebar.title("Menú")
-pagina_actual = st.sidebar.radio("Selecciona una opción", ["Unir PDFs", "Dividir PDFs", "Proteger PDF"])
+pagina_actual = st.sidebar.radio("Utilidades", ["Unir PDFs", "Dividir PDF", "Proteger PDF"])
 
 # Mostrar la página seleccionada
 if pagina_actual == "Unir PDFs":
     pagina_unir_pdfs()
-elif pagina_actual == "Dividir PDFs":
+elif pagina_actual == "Dividir PDF":
     pagina_dividir_pdfs()
 elif pagina_actual == "Proteger PDF":
     pagina_proteger_pdf()
