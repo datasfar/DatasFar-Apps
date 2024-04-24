@@ -3,4 +3,5 @@
 
 ### Apps List:
 1.- PDF Utilities: a tool to merge, split and protect pdf documents.
-2.- Background Remover: a tool to remove the background of a image.
+2.- Image Utilities: a tool to convert, resize and remove the background of a image.
+3.- Transcripter: a tool to transcript audio to text. (NEXT) Convert .ogg to .wav
