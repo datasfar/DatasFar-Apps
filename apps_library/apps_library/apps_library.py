@@ -1,26 +1,10 @@
-"""Welcome to Reflex! This file outlines the steps to create a basic app."""
-from rxconfig import config
-
 import reflex as rx
 
-docs_url = "https://reflex.dev/docs/getting-started/introduction"
-filename = f"{config.app_name}/{config.app_name}.py"
+from apps_library.pages.index import index
 
+import apps_library.styles.styles as styles
 
-class State(rx.State):
-    """The app state."""
+app = rx.App(
+    style=styles.MAIN_STYLES
+)
 
-    pass
-
-
-def index() -> rx.Component:
-    return rx.fragment(
-        rx.vstack(
-            rx.heading("Welcome to Reflex!", font_size="2"),
-        ),
-    )
-
-
-# Create app instance and add index page.
-app = rx.App()
-app.add_page(index)
