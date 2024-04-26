@@ -23,7 +23,7 @@ def navbar() -> rx.Component:
         rx.link(
             rx.hstack(
                 rx.icon(tag="github"),
-                rx.text("Ver Repositorio"),
+                rx.text("Repositorio"),
             ),
             href="/",
             style=styles.NAVBAR_LINK_STYLES

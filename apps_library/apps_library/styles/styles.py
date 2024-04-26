@@ -6,8 +6,14 @@ MAIN_STYLES = {
 }
 
 CONTENT_STYLES = {
-    "max_width":"1000px",
+    "max_width":["95%", "90%", "95%", "80%", "70%"],
     "margin":"auto",
+}
+
+CENTER_STYLES = {
+    "display":"flex",
+    "justify_content":["center","space-between"],
+    "flex_direction":["column", "column" , "row", "row", "row"]
 }
 
 
@@ -39,10 +45,11 @@ NAVBAR_LINK_STYLES = {
 # CARD STYLES
 
 CARD_STYLES = {
-    "max_width":"48%",
+    "max_width":["100%","100%", "48%", "48%", "48%"],
     "height":"189px",
     "border_radius":"15px",
     "background_color":"#1B1B1F",
+    "overflow":"hidden"
     
 }
 
@@ -60,6 +67,7 @@ CARD_DESCRIPTION_STYLES = {
 }
 
 CARD_IMAGE_STYLES = {
+    "min_width":["150px", "189px", "189px", "189px", "189px"],
     "position":"relative",
     "top":"45px",
     "left":"30px"

@@ -18,10 +18,9 @@ def index() -> rx.Component:
         rx.vstack(
             navbar(),
             rx.hstack(
-                card("Ejecuta las apps en tu propia maquina", "Podras descargar el código y ejecutar nuestras herramientas desde tu equipo.", "2.png"),
+                card("Funcionando en tu propia máquina", "Podrás descargar el código y ejecutarlas en local.", "2.png"),
                 card("Aprende a desarrollarlas por ti mismo", "Con nuestros video tutoriales entenderas como funcionan.", "1.png"),
-                display="flex",
-                justify_content="space-between"
+                style=styles.CENTER_STYLES
             ),
             style=styles.CONTENT_STYLES
         ),

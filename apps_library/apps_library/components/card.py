@@ -21,7 +21,8 @@ def card(title:str, description:str, image:str) -> rx.Component:
             ),
             width="40%",
             overflow="hidden",
-            border_radius="15px"
+            border_radius="15px",
+            align_self="flex-end"
         ),
         style=styles.CARD_STYLES
     )
