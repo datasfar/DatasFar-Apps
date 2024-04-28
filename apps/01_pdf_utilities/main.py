@@ -1,6 +1,8 @@
 import streamlit as st
 import PyPDF2
 
+from merge import Merge
+
 # Variables
 output_pdf = "pdf_final.pdf"
 output_pdf_dividido = "pdf_dividido.pdf"
@@ -127,7 +129,7 @@ def pagina_proteger_pdf():
             st.error("Las contraseñas no coinciden")
 
 # Configuración de la barra lateral
-pagina_actual = st.sidebar.radio("Utilidades", ["Unir PDFs", "Dividir PDF", "Proteger PDF"])
+pagina_actual = st.sidebar.radio("Utilidades", ["Unir PDFs", "Dividir PDF", "Proteger PDF", "Merger"])
 
 # Mostrar la página seleccionada
 if pagina_actual == "Unir PDFs":
@@ -136,3 +138,6 @@ elif pagina_actual == "Dividir PDF":
     pagina_dividir_pdfs()
 elif pagina_actual == "Proteger PDF":
     pagina_proteger_pdf()
+elif pagina_actual == "Merger":
+    merger = Merge()
+    merger.merge_interface()
