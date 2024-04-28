@@ -5,3 +5,4 @@
     1.- PDF Utilities: a tool to merge, split and protect pdf documents.
     2.- Image Utilities: a tool to convert, resize and remove the background of a image.
     3.- Transcripter: a tool to transcript audio to text. Text to audio and convert .ogg to .wav
+    4.- Image to text: convert image with clair text to plain text.
