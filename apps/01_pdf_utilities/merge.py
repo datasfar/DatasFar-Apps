@@ -4,14 +4,14 @@ import streamlit as st
 
 class Merge:
 
-    def __init__(self):
+    def __init__(self) -> None:
         """
         Inicializa la clase Merge.
         
         Crea un objeto Merge con el nombre del archivo de salida por defecto "pdf_final.pdf".
         """
 
-        self.output_pdf = "pdf_final.pdf"
+        self.output_pdf = "pdf_unido.pdf"
 
 
 
