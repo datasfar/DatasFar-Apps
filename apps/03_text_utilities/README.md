@@ -1,4 +1,4 @@
-# AUDIO UTILS:
+# TEXT UTILS:
 
 # FUNCIONALIDADES:
     1. Extraer el texto de una imagen.

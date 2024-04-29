@@ -15,7 +15,7 @@ Una biblioteca con herramientas útiles. Las aplicaciones están construidas en 
          2. Cambiar las dimensiones de una imagen.
          3. Eliminar el fondo de una imagen.
 
-   # 3.- AUDIO UTILS:
+   # 3.- TEXT UTILS:
 
       # FUNCIONALIDADES:
          1. Extraer el texto de una imagen.
