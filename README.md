@@ -1,8 +1,24 @@
 # DatasFar-Apps
- A library with usesful tools. The apps are build in python using the streamlit framework and the library web is build in Reflex. The site allows you to see the live demo and download the code.
+Una biblioteca con herramientas útiles. Las aplicaciones están construidas en Python utilizando el framework Streamlit y la biblioteca web está construida en Reflex. El sitio te permite ver la demostración, descargar el código y contendrá video tutoriales explicando como desarrollar las apps.
 
-    ### Apps List:
-    1.- PDF Utilities: a tool to merge, split and protect pdf documents.
-    2.- Image Utilities: a tool to convert, resize and remove the background of a image.
-    3.- Transcripter: a tool to transcript audio to text. Text to audio and convert .ogg to .wav
-    4.- Image to text: convert image with clair text to plain text.
+   # 1.- PDF UTILS:
+
+      # FUNCIONALIDADES:
+         1. Unir varios documentos PDF en uno.
+         2. Separar un documento PDF en varios.
+         3. Proteger un documento PDF con contraseña.
+
+   # 2.- IMAGE UTILS:
+
+      # FUNCIONALIDADES:
+         1. Convertir una imagen en formato .jpg o .jpeg a .png.
+         2. Cambiar las dimensiones de una imagen.
+         3. Eliminar el fondo de una imagen.
+
+   # 3.- AUDIO UTILS:
+
+      # FUNCIONALIDADES:
+         1. Extraer el texto de una imagen.
+         2. Extraer el texto de un audio.
+         3. Generar un audio a partir de un texto.
+         4. Convertir .ogg a .wav (por implementar).
