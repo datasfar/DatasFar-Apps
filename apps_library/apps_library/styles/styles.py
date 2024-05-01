@@ -72,3 +72,26 @@ CARD_IMAGE_STYLES = {
     "top":"45px",
     "left":"30px"
 } 
+
+
+# APP CARD STYLES
+
+APP_CARD_STYLE = {
+    "text_decoration":"none",
+    "width":"100%",
+    "display":"flex",
+    "justify_content":"center"
+}
+
+APP_CARD_INTERN = {
+    "background_color":"#1B1B1F",
+    "color":"white",
+    "padding":"1em",
+    "border_radius":"15px",
+    "max_width":"200px",
+    "min_height":"350px"
+}
+
+APP_CARD_IMAGE = {
+    "filter": "grayscale(100%) invert(100%)"
+}
