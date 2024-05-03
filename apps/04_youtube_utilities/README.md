@@ -1,8 +1,7 @@
 # YOUTUBE VIDEO DOWNLOADER & TRANSCRIPTER:
 
 # FUNCIONALIDADES:
-    1. Descarga videos de youtube, seleccionando formato y resolución.
-    2. Obten el transcript de un video.
+    1. Descarga videos de youtube, permite descargar solo audio.
 
 # DEPENDENCIAS:
     - pytube
@@ -16,3 +15,4 @@
     Open that file and it will run the command.
 
     Problema con resolución, no permite bajar a mas de 720p (limitación de pytube)
+    -> descargar highest resolution only

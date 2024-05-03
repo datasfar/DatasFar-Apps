@@ -9,10 +9,8 @@ class Downloader():
     
     def video_downloader_interface(self):
 
-        st.header("Descargar videos de Youtube")
         url = st.text_input("Inserte la url")
-        resolution = st.selectbox("Selecciona la resolución",["720p","480p","360p", "240p","144p"])
-
+        audio = st.checkbox("Descargar solo el audio ",)
         download_button = st.button("Descargar")
 
         if url != "":
@@ -32,9 +30,12 @@ class Downloader():
 
         if download_button:
 
-            video = youtube.streams.get_by_resolution(resolution)
-
-            video.download("./Descargas")
-            st.success("Video descargado correctamente")
-
-        ## Agregar opción para descargar solo el audio
+            if audio == True:
+                video = youtube.streams.get_audio_only()
+                video.download("./Descargas")
+                st.success("Audio descargado correctamente")
+            else:
+                video = youtube.streams.get_highest_resolution()
+                video.download("./Descargas")
+                st.success("Video descargado correctamente")
+            
