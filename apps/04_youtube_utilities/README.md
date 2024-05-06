@@ -1,4 +1,4 @@
-# YOUTUBE VIDEO DOWNLOADER & TRANSCRIPTER:
+# YOUTUBE VIDEO DOWNLOADER:
 
 # FUNCIONALIDADES:
     1. Descarga videos de youtube, permite descargar solo audio.
