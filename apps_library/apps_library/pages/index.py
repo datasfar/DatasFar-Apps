@@ -48,22 +48,16 @@ def index() -> rx.Component:
                     link="https://github.com/datasfar/DatasFar-Apps/tree/main/apps/03_text_utilities"
                 ),
                 app_card(
-                    image="pdf.png",
-                    name="PDF Utils",
-                    description="Une, divide y protege documentos pdf.",
-                    link="https://github.com/datasfar/DatasFar-Apps/tree/main/apps/01_pdf_utilities"
+                    image="youtube.png",
+                    name="Youtube Downloader",
+                    description="Permite visualizar y descargar videos y audios de youtube",
+                    link="https://github.com/datasfar/DatasFar-Apps/tree/main/apps/04_youtube_utilities"
                 ),
                 app_card(
-                    image="image.png",
-                    name="Image Utils",
-                    description="Convierte, redimensiona y elimina el fondo de una imagen.",
-                    link="https://github.com/datasfar/DatasFar-Apps/tree/main/apps/02_image_utilities"
-                ),
-                app_card(
-                    image="text.png",
-                    name="Text Utils",
-                    description="Extrae el texto de imagenes y audios y genera audio a partir de texto.",
-                    link="https://github.com/datasfar/DatasFar-Apps/tree/main/apps/03_text_utilities"
+                    image="worldtime.png",
+                    name="Reloj Mundial",
+                    description="Permite ver la hora equivalente en los paises seleccionados",
+                    link="https://github.com/datasfar/DatasFar-Apps/tree/main/apps/05_date_utilities"
                 ),
                 width="100%",
                 columns=[2, 3, 4, 4, 5],
