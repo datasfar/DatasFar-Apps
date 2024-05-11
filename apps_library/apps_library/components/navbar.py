@@ -1,6 +1,8 @@
 import reflex as rx
 import apps_library.styles.styles as styles
 
+from apps_library.routes import Route
+
 def navbar() -> rx.Component:
     return rx.hstack(
         rx.hstack(
@@ -13,9 +15,9 @@ def navbar() -> rx.Component:
             ),
             rx.link(
                 rx.box(
-                    rx.text("Tutorials")
+                    rx.text("Tutoriales")
                 ),
-                href="/",
+                href=Route.TUTORIALS.value,
                 style=styles.NAVBAR_LINK_STYLES
             )
         ),
@@ -25,7 +27,7 @@ def navbar() -> rx.Component:
                 rx.icon(tag="github"),
                 rx.text("Repositorio"),
             ),
-            href="/",
+            href="https://github.com/datasfar/DatasFar-Apps/tree/main/apps",
             style=styles.NAVBAR_LINK_STYLES
         ),
 

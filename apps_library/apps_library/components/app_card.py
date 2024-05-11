@@ -1,7 +1,7 @@
 import reflex as rx
 import apps_library.styles.styles as styles
 
-def app_card(image, name, description, link) -> rx.Component:
+def app_card(image, name, link) -> rx.Component:
     return rx.link(
         rx.vstack(
             rx.image(
@@ -9,7 +9,6 @@ def app_card(image, name, description, link) -> rx.Component:
                 style=styles.APP_CARD_IMAGE
             ),
             rx.heading(name),
-            rx.text(description),
             style=styles.APP_CARD_INTERN
         ),
         href=link,

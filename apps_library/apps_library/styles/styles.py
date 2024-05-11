@@ -8,6 +8,7 @@ MAIN_STYLES = {
 CONTENT_STYLES = {
     "max_width":["95%", "90%", "95%", "80%", "70%"],
     "margin":"auto",
+    "padding_bottom":"2em"
 }
 
 CENTER_STYLES = {
@@ -29,6 +30,7 @@ NAVBAR_STYLES = {
 }
 
 NAVBAR_LINK_STYLES = {
+    "font_weight":"600",
     "color":"white",
     "font_weight":"500",
     "text_decoration":"none",
@@ -37,7 +39,7 @@ NAVBAR_LINK_STYLES = {
     "padding_y":".6em",
     "border_radius":"5px",
     "_hover": {
-        "color":"orange"
+        "color":"#92E3A9",
     },
 }
 
@@ -49,7 +51,7 @@ CARD_STYLES = {
     "height":"189px",
     "border_radius":"15px",
     "background_color":"#1B1B1F",
-    "overflow":"hidden"
+    "overflow":"hidden",
     
 }
 
@@ -80,7 +82,8 @@ APP_CARD_STYLE = {
     "text_decoration":"none",
     "width":"100%",
     "display":"flex",
-    "justify_content":"center"
+    "justify_content":"center",
+    
 }
 
 APP_CARD_INTERN = {
@@ -88,8 +91,9 @@ APP_CARD_INTERN = {
     "color":"white",
     "padding":"1em",
     "border_radius":"15px",
-    "max_width":"200px",
-    "min_height":"350px"
+    "_hover": {
+        "background_color":"#3faa7a"
+    }
 }
 
 APP_CARD_IMAGE = {
