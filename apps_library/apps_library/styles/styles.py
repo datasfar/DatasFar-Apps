@@ -99,3 +99,47 @@ APP_CARD_INTERN = {
 APP_CARD_IMAGE = {
     "filter": "grayscale(100%) invert(100%)"
 }
+
+# APP DESCRIPTION STYLES
+
+APP_DESCRIPTION_MAIN = {
+    "width":"100%",
+    "margin_bottom":"1em",
+    "align_items":"center",
+    "justify_content":"space-between",
+    "display":["block", "flex", "flex", "flex", "flex"] 
+}
+
+SHOW_APP_IMAGE = {
+    "filter":"grayscale(100%) invert(100%)",
+    "width":"120px",
+    "height":"120px"
+}
+
+SHOW_APP_IMAGE_BOX = {
+    "background_color":"#3faa7a",
+    "padding":"1em",
+    "border_radius":"15px",
+    "margin_right":"1em"
+}
+
+SHOW_APP_BUTTONS = {
+    "width":"100%",
+    "background_color":"#3faa7a",
+    "padding":"0.6em"
+}
+
+SHOW_APP_BUTTONS_BOX = {
+    "padding_x":"2em",
+    "margin_top":["1em", "0", "0", "0", "0"]
+}
+
+SHOW_APP_GALERY = {
+
+}
+
+SHOW_APP_GALERY_IMAGE = {
+    "width":"250px",
+    "height":"450px",
+    "border_radius":"15px"
+}

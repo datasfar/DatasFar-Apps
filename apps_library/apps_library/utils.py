@@ -41,3 +41,13 @@ pdf_utils_meta = [
     {"name": "og:description", "content": index_description},
 ]
 pdf_utils_meta.extend(_meta)
+
+# Image Utils
+image_utils_title = "Image Utils | By dataSfar"
+image_utils_description = "Aplicación de utilidades para imagenes."
+
+image_utils_meta = [
+    {"name": "og:title", "content": index_title},
+    {"name": "og:description", "content": index_description},
+]
+image_utils_meta.extend(_meta)

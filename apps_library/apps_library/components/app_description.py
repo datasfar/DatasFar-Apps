@@ -1,24 +1,21 @@
 import reflex as rx
+import apps_library.styles.styles as styles
 
-def app_description() -> rx.Component:
+
+def app_description(image:str, title:str, description:str) -> rx.Component:
     return rx.hstack(
             rx.hstack(
                 rx.box(
                     rx.image(
-                        src="/pdf.png",
-                        filter = "grayscale(100%) invert(100%)",
-                        width="120px",
-                        height="120px"
+                        src=image,
+                        style=styles.SHOW_APP_IMAGE
                     ), 
-                background_color="#3faa7a",
-                padding="1em",
-                border_radius="15px",
-                margin_right="1em"
+                style=styles.SHOW_APP_IMAGE_BOX
                 ), 
                 rx.vstack(
-                    rx.heading("PDF Utils"),
+                    rx.heading(title),
                     rx.text(
-                        "Lorem ipsum dolor siet amet dor migo lomayd sdoj. Opsum dolor siet amet dor migo lomayd sdoj.",
+                        description,
                         max_width="300px"
                     ),
                 ),
@@ -27,26 +24,20 @@ def app_description() -> rx.Component:
                 rx.button(
                     rx.icon(tag="download"),
                     "Descargar",
-                    width="100%",
-                    background_color="#3faa7a"
+                    style=styles.SHOW_APP_BUTTONS
                 ),
                 rx.button(
                     rx.icon(tag="code"),
                     "Ver Código",
-                    width="100%",
-                    background_color="#3faa7a"
+                    style=styles.SHOW_APP_BUTTONS
                 ),
                 rx.button(
                     rx.icon(tag="panels-top-left"),
                     "Live Demo",
-                    width="100%",
-                    background_color="#3faa7a"
+                    style=styles.SHOW_APP_BUTTONS
                 ),
-                padding_x="2em"
+                style=styles.SHOW_APP_BUTTONS_BOX
             ),
-        width="100%",
-        margin_bottom="1em",
-        align_items="center",
-        justify_content="space-between" 
+        style=styles.APP_DESCRIPTION_MAIN
     )
     

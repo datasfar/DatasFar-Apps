@@ -7,8 +7,6 @@ import apps_library.styles.styles as styles
 from apps_library.components.navbar import navbar
 from apps_library.components.app_description import app_description
 from apps_library.components.images_show import images_show
-from apps_library.components.card import card
-from apps_library.components.app_card import app_card
 
 @rx.page(
     route=Route.PDF_UTILS.value,
@@ -22,7 +20,7 @@ def pdf_utils() -> rx.Component:
         utils.lang(),
         rx.vstack(
             navbar(),
-            app_description(),
+            app_description("/pdf.png", "PDF Utils", "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aenean cursus arcu vel sapien rhoncus, non porta ante euismod."),
             images_show(["/pdf_utils_image/1.png", "/pdf_utils_image/2.png", "/pdf_utils_image/3.png", "/pdf_utils_image/4.png", "/pdf_utils_image/5.png"]),
             style=styles.CONTENT_STYLES
         ),

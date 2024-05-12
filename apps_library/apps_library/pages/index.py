@@ -38,7 +38,7 @@ def index() -> rx.Component:
                 app_card(
                     image="image.png",
                     name="Image Utils",
-                    link="https://github.com/datasfar/DatasFar-Apps/tree/main/apps/02_image_utilities"
+                    link= Route.IMAGE_UTILS.value
                 ),
                 app_card(
                     image="text.png",

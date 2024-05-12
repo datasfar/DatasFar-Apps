@@ -1,11 +1,10 @@
 import reflex as rx
+import apps_library.styles.styles as styles
 
 def image(image:str) -> rx.Component:
     return rx.image(
         src=image,
-        width="250px",
-        height="450px",
-        border_radius="15px"
+        style=styles.SHOW_APP_GALERY_IMAGE
     )
 
 
