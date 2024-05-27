@@ -20,7 +20,7 @@ def pdf_utils() -> rx.Component:
         utils.lang(),
         rx.vstack(
             navbar(),
-            app_description("/pdf.png", "PDF Utils", "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aenean cursus arcu vel sapien rhoncus, non porta ante euismod."),
+            app_description("/pdf.png", "PDF Utils", "La aplicación permite: unir, dividir y proteger con contraseña documentos pdf. Utilizando la librería PyPDF."),
             images_show(["/pdf_utils_image/1.png", "/pdf_utils_image/2.png", "/pdf_utils_image/3.png", "/pdf_utils_image/4.png", "/pdf_utils_image/5.png"]),
             style=styles.CONTENT_STYLES
         ),

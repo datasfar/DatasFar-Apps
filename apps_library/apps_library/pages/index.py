@@ -43,17 +43,17 @@ def index() -> rx.Component:
                 app_card(
                     image="text.png",
                     name="Text Utils",
-                    link="https://github.com/datasfar/DatasFar-Apps/tree/main/apps/03_text_utilities"
+                    link=Route.TEXT_UTILS.value
                 ),
                 app_card(
                     image="youtube.png",
                     name="Youtube Downloader",
-                    link="https://github.com/datasfar/DatasFar-Apps/tree/main/apps/04_youtube_utilities"
+                    link=Route.YT_DOWNLOADER.value
                 ),
                 app_card(
                     image="worldtime.png",
                     name="Reloj Mundial",
-                    link="https://github.com/datasfar/DatasFar-Apps/tree/main/apps/05_date_utilities"
+                    link=Route.GLOBAL_TIME.value
                 ),
                 width="100%",
                 columns=[2, 3, 4, 4, 5],

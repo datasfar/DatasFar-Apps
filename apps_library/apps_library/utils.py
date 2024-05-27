@@ -51,3 +51,15 @@ image_utils_meta = [
     {"name": "og:description", "content": index_description},
 ]
 image_utils_meta.extend(_meta)
+
+# Text Utils
+text_utils_title = "Text Utils | By dataSfar"
+text_utils_description = "Aplicación de utilidades para textos."
+
+# Youtube Downloader
+yt_downloader_title = "Youtube Downloader | By dataSfar"
+yt_downloader_description = "Aplicación para descargar videos de youtube."
+
+# Global Time
+global_time_title = "Global Time | By dataSfar"
+global_time_description = "Aplicación de utilidades para fechas globales."

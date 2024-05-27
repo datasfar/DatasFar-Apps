@@ -8,7 +8,10 @@ def app_card(image, name, link) -> rx.Component:
                 src=image,
                 style=styles.APP_CARD_IMAGE
             ),
-            rx.heading(name),
+            rx.heading(
+                name,
+                style=styles.CARD_TITLE_STYLES
+            ),
             style=styles.APP_CARD_INTERN
         ),
         href=link,

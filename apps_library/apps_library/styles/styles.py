@@ -61,7 +61,7 @@ CARD_INFO_STYLES = {
 }
 
 CARD_TITLE_STYLES = {
-
+    "font_size":"1.4em"
 }
 
 CARD_DESCRIPTION_STYLES = {
