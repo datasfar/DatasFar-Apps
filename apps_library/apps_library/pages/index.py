@@ -25,8 +25,8 @@ def index() -> rx.Component:
                 style=styles.CENTER_STYLES
             ),
             rx.heading(
-                "Repositorio de apps:",
-                margin_top="1.6em",
+                "Repositorio de apps",
+                margin_top="1.4em",
                 margin_bottom="1em"
             ),
             rx.chakra.responsive_grid(
@@ -47,7 +47,7 @@ def index() -> rx.Component:
                 ),
                 app_card(
                     image="youtube.png",
-                    name="Youtube Downloader",
+                    name="YT Downloader",
                     link=Route.YT_DOWNLOADER.value
                 ),
                 app_card(

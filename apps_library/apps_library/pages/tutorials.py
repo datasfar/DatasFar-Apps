@@ -16,11 +16,12 @@ from apps_library.components.app_card import app_card
     meta=utils.tutorials_meta
 )
 def tutorials() -> rx.Component:
-    return rx.box(
-        utils.lang(),
-        rx.vstack(
-            navbar(),
-            style=styles.CONTENT_STYLES
-        ),
+    return rx.center(
+            
+            rx.vstack(
+                rx.heading("PROXIMAMENTE", size='9'),
+                rx.link(rx.hstack(rx.icon("arrow-left"), "volver atras", color="#3faa7a"),
+                        href="/",),
+            ),
         style=styles.MAIN_STYLES
     )

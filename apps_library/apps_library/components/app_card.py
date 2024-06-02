@@ -10,10 +10,11 @@ def app_card(image, name, link) -> rx.Component:
             ),
             rx.heading(
                 name,
-                style=styles.CARD_TITLE_STYLES
+                style=styles.CARD_APP_TITLE_STYLES
             ),
             style=styles.APP_CARD_INTERN
         ),
         href=link,
         style=styles.APP_CARD_STYLE
     )
+

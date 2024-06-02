@@ -1,5 +1,5 @@
 MAIN_STYLES = {
-    "background_color":"black",
+    "background_color":"#040D12",
     "min_width":"100vw",
     "min_height":"100vh",
     "color":"white",
@@ -30,9 +30,8 @@ NAVBAR_STYLES = {
 }
 
 NAVBAR_LINK_STYLES = {
-    "font_weight":"600",
+    "font_weight":"700",
     "color":"white",
-    "font_weight":"500",
     "text_decoration":"none",
     "background_color":"#1B1B1F",
     "padding_x":"1em",
@@ -52,8 +51,8 @@ CARD_STYLES = {
     "border_radius":"15px",
     "background_color":"#1B1B1F",
     "overflow":"hidden",
-    
 }
+    
 
 CARD_INFO_STYLES = {
     "width":"60%",
@@ -61,7 +60,7 @@ CARD_INFO_STYLES = {
 }
 
 CARD_TITLE_STYLES = {
-    "font_size":"1.4em"
+    "font_size":"1.2em",
 }
 
 CARD_DESCRIPTION_STYLES = {
@@ -98,6 +97,10 @@ APP_CARD_INTERN = {
 
 APP_CARD_IMAGE = {
     "filter": "grayscale(100%) invert(100%)"
+}
+
+CARD_APP_TITLE_STYLES = {
+    "font_size":"1.2em",
 }
 
 # APP DESCRIPTION STYLES
