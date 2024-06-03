@@ -1,5 +1,5 @@
 # DatasFar-Apps
-Una biblioteca con herramientas útiles. Las aplicaciones están construidas en Python utilizando el framework Streamlit y la biblioteca web está construida en Reflex. El sitio te permite ver la demostración, descargar el código y contendrá video tutoriales explicando como desarrollar las apps.
+Una biblioteca con herramientas útiles. Las aplicaciones están construidas en Python utilizando el framework Streamlit y la biblioteca web está construida en Reflex. Descargar el código y contendrá video tutoriales explicando como desarrollar las apps.
 
 [Link del Proyecto](https://pyapps.datasfar.com/)
 

@@ -3,6 +3,7 @@ import reflex as rx
 from apps_library.routes import Route
 import apps_library.utils as utils
 import apps_library.styles.styles as styles
+import apps_library.constants as constants
 
 from apps_library.components.navbar import navbar
 from apps_library.components.app_description import app_description
@@ -21,7 +22,20 @@ def image_utils() -> rx.Component:
         utils.lang(),
         rx.vstack(
             navbar(),
-            app_description("/image.png", "Image Utils", "Permite redimensionar y cambiar el formato de las imagenes utilizando cv2. Y elimina el fondo de una imagen con rembg."),
+            app_description("/image.png", "Image Utils", "Permite redimensionar y cambiar el formato de las imagenes utilizando cv2. Y elimina el fondo de una imagen con rembg.", constants.IMAGE_REPO),
+            rx.markdown('''# FUNCIONALIDADES:
+    1. Convertir una imagen en formato .jpg o .jpeg a .png.
+    2. Cambiar las dimensiones de una imagen.
+    3. Eliminar el fondo de una imagen.
+
+# DEPENDENCIAS:
+    - rembg
+    - BytesIO
+    - Pillow
+    - numpy
+    - cv2
+    - streamlit
+            '''),
             images_show([
                 "/image_utils_image/1.png", 
                 "/image_utils_image/2.png", 

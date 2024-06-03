@@ -2,7 +2,7 @@ import reflex as rx
 import apps_library.styles.styles as styles
 
 
-def app_description(image:str, title:str, description:str) -> rx.Component:
+def app_description(image:str, title:str, description:str, link:str) -> rx.Component:
     return rx.hstack(
             rx.hstack(
                 rx.box(
@@ -21,20 +21,13 @@ def app_description(image:str, title:str, description:str) -> rx.Component:
                 ),
             ),
             rx.vstack(
-                rx.button(
-                    rx.icon(tag="download"),
-                    "Descargar",
-                    style=styles.SHOW_APP_BUTTONS
-                ),
-                rx.button(
-                    rx.icon(tag="code"),
-                    "Ver Código",
-                    style=styles.SHOW_APP_BUTTONS
-                ),
-                rx.button(
-                    rx.icon(tag="panels-top-left"),
-                    "Live Demo",
-                    style=styles.SHOW_APP_BUTTONS
+                rx.link(
+                    rx.button(
+                        rx.icon(tag="code"),
+                        "Ver Código",
+                        style=styles.SHOW_APP_BUTTONS
+                    ),
+                    href=link
                 ),
                 style=styles.SHOW_APP_BUTTONS_BOX
             ),

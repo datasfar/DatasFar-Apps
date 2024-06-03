@@ -128,13 +128,17 @@ SHOW_APP_IMAGE_BOX = {
 
 SHOW_APP_BUTTONS = {
     "width":"100%",
-    "background_color":"#3faa7a",
-    "padding":"0.6em"
+    "background_color":"#1B1B1F",
+    "padding":"0.6em",
+    "_hover":{
+        "background":"#3faa7a"
+    }
 }
 
 SHOW_APP_BUTTONS_BOX = {
     "padding_x":"2em",
-    "margin_top":["1em", "0", "0", "0", "0"]
+    "margin_top":["1em", "0", "0", "0", "0"],
+    "align_self":"baseline"
 }
 
 SHOW_APP_GALERY = {
